@@ -40,7 +40,8 @@ total_results_summary_log_file = "{dir}/{name}".format(
     dir=config[Keys.GENERAL][Keys.REMOTE_LOGS_DIR], name="total_results_summary_log_file.json")
 
 # Setup details:
-server_url = "http://{ip}:{port}".format(
+server_url = "{proto}://{ip}:{port}".format(
+    proto=config[Keys.CLIENT][Keys.PROTOCOL],
     ip=config[Keys.SERVER][Keys.NGINX_IP], port=config[Keys.SERVER][Keys.NGINX_PORT])
 
 

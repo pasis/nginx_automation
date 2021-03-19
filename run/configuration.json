@@ -22,6 +22,7 @@
         "vma_parameters_ref": []
     },
     "client_section": {
+        "protocol": "http",
         "wrk_bin": "/auto/mtrswgwork/simonra/dev/wrk/wrk",
         "wrk_servers": [
             "swx-asus01",
